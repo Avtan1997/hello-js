@@ -1,9 +1,9 @@
-const people = [
-  {name: 'Avtandil', age: 12, gender: 'man'},
-  {name: 'Chynara', age: 24, gender: 'woman'},
-  {name: 'Yrysbek', age: 17, gender: 'man'},
-  {name: 'Anara', age: 42, gender: 'woman'}
-]
+// const people = [
+//   {name: 'Avtandil', age: 12, gender: 'man'},
+//   {name: 'Chynara', age: 24, gender: 'woman'},
+//   {name: 'Yrysbek', age: 17, gender: 'man'},
+//   {name: 'Anara', age: 42, gender: 'woman'}
+// ]
 
 // const out = people.map(person => person.age).filter(i => i > 18).reduce((a, b) => a + b )
 // console.log(out)
@@ -13,11 +13,6 @@ const people = [
 //   out.push(people[i].gender)
 // }
 // console.log(out)
-
-
-
-
-
 
 // for (let person of people){
 //   console.log(person)
@@ -55,3 +50,17 @@ const people = [
 //Метод Reduce
 // const male = people.reduce((a, b) => a * b.age, 1)
 // console.log(male)
+
+//Задачи по js номер 1
+// function eachCons(array, n) {
+//   const r = []
+//   for(i = 0; i <= array.length - n; i++){
+//     const chunk = []
+//     for (let j = i; j < i + n; j++){
+//       chunk.push(array[j])
+//     }
+//     r.push(chunk)
+//   }
+//   return r
+// }
+// console.log(eachCons(1, 3))
