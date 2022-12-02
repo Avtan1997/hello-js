@@ -64,3 +64,41 @@
 //   return r
 // }
 // console.log(eachCons(1, 3))
+
+// let myString = 'Привет, мир. Как дела?';
+// let splits = myString.split(' ', 4);
+//
+// console.log(splits);
+
+// let str = 'lidnavtvA';
+// let strReverse = str.split('').reverse().join(''); // 'длорпавыф'
+// // split() возвращает массив, к которому применяются методы reverse() и join()
+// console.log(strReverse)
+
+// const str = '.ытосарк йотсич йинег каК ,еьнедив еонтеломим каК' +
+//   ' ,ыт ьсаливя йонм одереП ,еьневонгм еондуч юнмоп Я'
+// const strReverse = str.split('').reverse().join('')
+// console.log(strReverse)
+
+// let str = ''
+// let a = str.split('', 4)
+// console.log(a)
+////////////////////////////////////////////////////////////////
+// let b = ['h', 'e', 'l', 'l', 'o']
+// let c = b.join(' ')
+// console.log(c)
+// console.log(b)
+
+
+// function one(){
+//   if(one.isRun)
+//   console.log('one')
+//   this.isRun = true
+// }
+// one()
+// one()
+// one()
+// document.querySelector('button').addEventListener('click', one)
+
+// let string = '1' + '0'.repeat(100)
+// console.log(string)
