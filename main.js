@@ -101,4 +101,4 @@
 // document.querySelector('button').addEventListener('click', one)
 
 // let string = '1' + '0'.repeat(100)
-// console.log(string)
+console.log(string)
