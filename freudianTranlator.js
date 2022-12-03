@@ -21,7 +21,7 @@ function plural(n){
 }
 console.log(plural(1));
 
-Короткая версия функции
+//Короткая версия функции
 function plural2(n){
   if(n === 1) return false
   else return true
