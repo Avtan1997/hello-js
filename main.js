@@ -77,15 +77,17 @@
 
 // const str = '.ытосарк йотсич йинег каК ,еьнедив еонтеломим каК' +
 //   ' ,ыт ьсаливя йонм одереП ,еьневонгм еондуч юнмоп Я'
-// const strReverse = str.split('').reverse().join('')
+// const strReverse = str.split('').reverse().join('').split(', ').join(',\n')
 // console.log(strReverse)
 
-// let str = ''
-// let a = str.split('', 4)
+// let str = 'Hello'
+// let a = str.split('', 3)
 // console.log(a)
 ////////////////////////////////////////////////////////////////
 // let b = ['h', 'e', 'l', 'l', 'o']
 // let c = b.join(' ')
+// console.log(c)
+// console.log(b.push('!'))
 // console.log(c)
 // console.log(b)
 
@@ -101,4 +103,26 @@
 // document.querySelector('button').addEventListener('click', one)
 
 // let string = '1' + '0'.repeat(100)
-console.log(string)
+// console.log(string)
+
+// let now = new Date(); // Текущее время как объект Date.
+// let ms = now.getTime()
+// console.log(ms)
+
+// const a = 'Hello'
+// a.length
+// console.log(a.length)
+
+// const dict = {
+//   '♣' : 'clubs',
+//   '♦' : 'diamonds',
+//   '♥' : 'hearts',
+//   '♠' : 'spades',
+// }
+// const defineSuit = (card) => dict[card.at(-1)]
+// console.log(defineSuit('3♣'));
+
+defineSuit=([,b,c])=>({'♣':'clubs','♠':'spades','♦':'diamonds','♥':'hearts'})[c||b]
+console.log(defineSuit('3♣'));
+
+
