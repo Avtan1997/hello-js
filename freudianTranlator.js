@@ -74,4 +74,4 @@
 // console.log(divide(2, 1))
 // console.log(mod(1, 2))
 // console.log(exponent(1, 2))
-// console.log(subt(1, 2))
+console.log(subt(1, 2))
