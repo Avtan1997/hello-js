@@ -46,3 +46,5 @@
 //   return acc
 // }, {})
 // console.log(fruits)
+
+let а = { b: null }; a.b?.c.d // => undefined

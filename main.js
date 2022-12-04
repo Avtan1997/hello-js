@@ -1,3 +1,10 @@
+const express = require('express');
+const app = express();
+app.get('/home', (req, res) => { res.send('Hello World!');
+});
+app.listen(4000, () => {
+  console.log('Express web app on localhost:3000');
+});
 // const people = [
 //   {name: 'Avtandil', age: 12, gender: 'man'},
 //   {name: 'Chynara', age: 24, gender: 'woman'},
@@ -122,7 +129,7 @@
 // const defineSuit = (card) => dict[card.at(-1)]
 // console.log(defineSuit('3♣'));
 
-defineSuit=([,b,c])=>({'♣':'clubs','♠':'spades','♦':'diamonds','♥':'hearts'})[c||b]
-console.log(defineSuit('3♣'));
+// defineSuit=([,b,c])=>({'♣':'clubs','♠':'spades','♦':'diamonds','♥':'hearts'})[c||b]
+// console.log(defineSuit('3♣'));
 
 
