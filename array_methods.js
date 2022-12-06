@@ -1,3 +1,6 @@
+console.log(42.888.toFixed(2))
+
+
 /** forEach */
 
 //  const items = ['item1,', 'item2', 'item3']
@@ -46,3 +49,5 @@
 //   return acc
 // }, {})
 // console.log(fruits)
+
+// let а = { b: null }; a.b?.c.d // => undefined
