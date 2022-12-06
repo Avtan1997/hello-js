@@ -1,3 +1,3 @@
-let o = new Object
-o.x = 1
-console.log(o)
+
+let i = 1, j = ++i;
+console.log(i)
