@@ -37,13 +37,13 @@
 // }
 // console.log(o.toString());
 
-const avtan = {
-  _age: 25,
-  get age() {return this._age},
-  set age(value) {this._age = value}
-}
-avtan.age = 65
-console.log(avtan.age)
+// const avtan = {
+//   _age: 25,
+//   get age() {return this._age},
+//   set age(value) {this._age = value}
+// }
+// avtan.age = 65
+// console.log(avtan.age)
 
 
 
