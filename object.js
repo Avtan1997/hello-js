@@ -206,7 +206,7 @@
 //   if (typeof o [p] === 'function') continue; // пропускать все методы
 // }
 // console.log(o)
-
+//
 
 
 
