@@ -144,6 +144,7 @@
 //task 13
 //Проверка свойств метод hasOwnProperty() объекта проверяет имеет ли данный
 // объект собственное свойство заданным именнем.
+
 // let o = {x: 1};
 // o.hasOwnProperty('x') //o имеет собственное свойство x (true)
 // console.log(o.hasOwnProperty('x'))
@@ -156,6 +157,7 @@
 
 //Метод propertyIsEnumerable() улучшает проверку hasOwnProperty()
 //Возрашает true если именнованое свойство является собственным и атрибут enumerable имеет true.
+
 // let o = {x: 1 };
 // o.propertyIsEnumerable('x') // o имеет свойстов x (true)
 // console.log(o.propertyIsEnumerable('x'))
@@ -165,6 +167,52 @@
 //
 // Object.prototype.propertyIsEnumerable('toString') //Не перечислимое свойство
 // console.log(Object.prototype.propertyIsEnumerable('toString'))
+
+//Метод !== для его проверки на предмент undefined
+
+// let o = {x: 1};
+// o.x !== undefined // o имеет свойство x (true)
+// console.log(o.x !== undefined)
+//
+// o.y !== undefined // o не имеет свойство y
+// console.log(o.y !== undefined)
+//
+// o.toString() !== undefined // o наследует свойство toString (true)
+// console.log(o.toString !== undefined)
+
+//Операция in проводит различие между свойствами которые не существует и существует но
+//были установлены в undefined
+
+// let o = {x: undefined}; //Свойство устоновил в undefined
+// o.x !== undefined // свойство существует но равно undefined (false)
+//
+// o.y !== undefined //свойство не существует (false)
+// 'x' in o // свойство существует (true)
+// 'y' in o // свойство не существует (false)
+// delete o.x //свойство x было удалено
+// 'x' in o //свойство  x больше не существует(false)
+// console.log('x' in o)
+
+//task 14
+//Перечисление свойств цикл for/in
+
+// let o = {x: 1, y: 2, z: 3}; // Три перечислимых собственных
+// o.propertyIsEnumerable('toString') // не перечислимое (false)
+// for (let p in o){ // Проход в цикле по свойствам
+//   if(!o.hasOwnProperty(p)) continue; //пропускать унаследованные свойства
+//   console.log(p) //Вводится x, y, z, но не toString
+// }
+// for (let p in o) {
+//   if (typeof o [p] === 'function') continue; // пропускать все методы
+// }
+// console.log(o)
+
+
+
+
+
+
+
 
 
 
