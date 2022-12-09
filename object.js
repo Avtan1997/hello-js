@@ -1,4 +1,5 @@
-//task 1 Объекты
+//task 1 Объекты 08.12.2022
+
 // let empty = {}; //Объект без свойтва
 // let point = {x: 0, y: 0}; //С двумя свойства
 // let p2 = {x: point.x, y: point.y+1};
@@ -206,7 +207,222 @@
 //   if (typeof o [p] === 'function') continue; // пропускать все методы
 // }
 // console.log(o)
+
+//task 15
+//Функция Object.keys() возвращает массив собственных
+// перечислемых имен свойств данного объекта со строковыми ключами.
+
+// const object1 = {
+//   a: 'somestring',
+//   b: 42,
+//   c: false
+// }
+// console.log(Object.keys(object1))
+
+//Функция Object.getOwnPropertyNames() возвращает массив со всеми свойствами
+//(независимо от того перечисляемые или нет) найденными непосредственно в переданном объекте.
+// const object1 = {
+//   a: 1,
+//   b: 2,
+//   c: 3
+// }
+// console.log(Object.getOwnPropertyNames(object1))
+
+//Метод Object.getOwnPropertySymbols() возвращает массив
+// всех символьных свойств, найденных непосредственно на переданном объекте.
+// const object1 = {};
+// const a = Symbol('a');
+// const b = Symbol.for('b');
 //
+// object1[a] = 'LocalSymbol';
+// object1[b] = 'globalSymbol';
+//
+// const objectSymbols = Object.getOwnPropertySymbols(object1)
+//
+// console.log(objectSymbols.length)
+
+//task 16
+//Метод Object.assign() используется для копирования значений всех собственных
+// перечисляемых свойств из одного или более исходных объектов в целевой объект.
+// После копирования он возвращает целевой объект.
+
+//Пример копирование
+// const obj1 = { //Это конструкция ссылка внутри значение которые могу поменять
+//   category: 'shoes',
+//   size: 45,
+//   color: 'black'
+// }
+// const obj2 = Object.assign({}, obj1) //Первый элемент пустой объект{} внутри assign и копирую obj1
+// obj2.category = 'dress'
+// obj2.size = 52
+// obj2.color = 'red'
+//
+// console.log(obj1)
+// console.log(obj2)
+
+//Пример слияние объектов
+
+// const o1 = {avtan: '01.11.1997'}
+// const o2 = {chynara: '11.09.1997'}
+// const o3 = {yrysbek: '15.07.2005'}
+//
+// const obj = Object.assign(o1, o2, o3)
+// console.log(obj)
+// console.log(o1) // Изменился и сам целовой объект
+
+//Пример копирование символьных свойств
+
+// const o1 = {a: 1};
+// const o2 = {[Symbol('foo')]: 2};
+//
+// const obj = Object.assign({}, o1, o2);
+// console.log(obj)
+
+//Пример: наследуемые и неперечисляемые свойства не копируются
+
+// const obj = Object.create({foo: 1}, {
+//   bar: {
+//     value: 2 // bar является неперечисляемым свойством
+//   },
+//   baz: {
+//     value: 3,
+//     enumerable: true //baz является собственным перечисляемым свойством.
+//   }
+// });
+//
+// const copy = Object.assign({}, obj);
+// console.log(copy)
+
+//task 17
+//Метод Object.create() создаёт новый объект с указанным прототипом и свойствами.
+
+//Shape - суперкласс
+// function Shape() {
+//   this.x = 0;
+//   this.y = 0;
+// }
+//
+// //Метод суперкласса
+// Shape.prototype.move = function (x, y) {
+//   this.x += x;
+//   this.y += y;
+//   console.info('Фигура переместилась.');
+// };
+//
+// //Rectangle - подкласс
+// function Rectangle() {
+//   Shape.call(this); //Вызываю конструктор супер класса
+// }
+//
+//
+// // подкласс расширяет суперкласс
+// Rectangle.prototype = Object.create(Shape.prototype);
+// Rectangle.prototype.constructor = Rectangle;
+//
+// const rect = new Rectangle();
+//
+// console.log('Является ли rect экземпляром Rectangle? ' + (rect instanceof Rectangle)); // true
+// console.log('Является ли rect экземпляром Shape? ' + (rect instanceof Shape)); // true
+// rect.move(1, 1); // выведет 'Фигура переместилась.'
+
+//task 18
+// Перечисление свойств
+
+// let o = {x: 1, y: 2, z: 3}; //Три перечислимых свойства
+// o.propertyIsEnumerable('toString') // Не перечислимое (false)
+// for (let p in o) { //Проход в цикле по свойствам
+//   console.log(p) // Выводится x, y, и z но не toString
+// }
+
+//task 19
+// Сериализция объекта stringify, parse
+
+// let o = {x: 1, y:{z: [false, null, '']}}; //Определение текстового объекта
+//
+// let s = JSON.stringify(o); //s == {'x': 1, 'y': {'z':[false, null, '']}}'
+// let p = JSON.parse(s); //p == {x: 1, y: {z: 1, y:{z: [false, null, '']}}
+
+//task 20
+//Метод toString()
+
+// let s = {x: 1, y: 1}.toString(); // s == [object Object];
+
+// let point = {
+//   x: 1,
+//   y: 2,
+//   toString: function () {return `(${this.x}, ${this.y})`;}
+// };
+// String(point) //=> '(1, 2)': toString() применяется для преобразованный в строки.
+
+//task 21
+
+//Метод toLocaleString()
+//В дополнение к базовому методу toString() все объекты имеют метод toLocaleString()
+
+// let point = {
+//   x: 1000,
+//   y: 2000,
+//   toString: function () {return `(${this.x}, ${this.y})`; },
+//   toLocaleString: function (){
+//     return `(${this.x.toLocaleString()}, ${this.y.toLocaleString()})`;
+//   }
+// }
+// point.toString() //=> '(1000, 2000)'
+// point.toLocaleString() //'(1,000, 2,000)': обратите внимние на наличие разделителей тысяч.
+
+//task 22
+// Метод valueOf() во многом похож на метод toString().
+
+// let point = {
+//   x: 3,
+//   y: 4,
+//   valueOf: function () {return Math.hypot(this.x, this.y); }
+// };
+// Number(point) //=> 5:  valueOf() применяется для преобразование
+// point > 4 //=> true
+// point > 5 //=> false
+// point < 6 //=> true
+
+//task 23
+//Метод toJSON()
+
+// let point = {
+//   x: 1,
+//   y: 2,
+//   toString: function () {return `(${this.x}, ${this.y})`; },
+//   toJSON: function () {return this.toString(); }
+// };
+// JSON.stringify([point]) // '["(1, 2)"]'
+
+// task 24
+//Сокращенная запись свойств
+
+// let x = 1, y = 2
+// let o = {
+//   x: x,
+//   y: y
+// };
+//
+// //Отбрасывю двоеточие и одну копию идентификатора
+//
+// let x = 1, y = 2;
+// let o = {x, y};
+// o.x + o.y //=> 3
+
+//Вычисляемые имена свойств
+
+const PROPERTY_NAME = 'p1';
+function computePropertyName() {return}
+
+
+
+
+
+
+
+
+
+
 
 
 
