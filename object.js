@@ -411,8 +411,13 @@
 
 //Вычисляемые имена свойств
 
-const PROPERTY_NAME = 'p1';
-function computePropertyName() {return}
+// const PROPERTY_NAME = 'p1';
+// function computePropertyName() {return 'p' + 2;}
+// let o = {};
+// o[PROPERTY_NAME] = 1;
+// o[computePropertyName()] = 2
+
+
 
 
 
