@@ -187,8 +187,112 @@
 // const a = []; //Начать с пустого массива
 // a[0] = 'zero';
 // console.log(a)
+// a[1] = 'one'
+// console.log(a)
 
+//Метод push() для добавление одного и более значений в конце массива
+// let a = []; //Начать с упстого массива
+// a.push('zero'); //Добавить значение в конец. a = ['zero']
+// a.push('one', 'two'); //Добавить еще два значения.
+// // a.pop() //удаляет последний элменет  в массиве противоположность методу push()
+// a.unshift(); // для вставки значение в начало массива.
+// console.log(a)
 
+//Delete для удаление элементов массива как и в объектах в точности.
+// let a = [1, 2, 3];
+// delete a[2] // теперь a не имеет элента по индексу 2.
+// console.log(2 in a); //false индекс 2 в массиве неопределен
+// console.log(a.length); //Длина массива 3 Delete не влияет на длинну массива если даже удалил
+// console.log(a)
+
+//task 10
+//Итерация по массивам.
+//for/of цикл примение.
+// let letters = [...'Hello World']; // Массив букв
+// let string = '';
+// for (let letter of letters){
+//   string += letter;
+// }
+// console.log(string); //Повторно собрал первоначальный текст.
+
+//Метод entries()
+// let everyother = '';
+// for(let [index, letter] of letters.entries()) {
+//   if (index % 2 === 0) everyother += letter; //буквы по четным индексам.
+// }
+// console.log(everyother); //HloWrd
+
+//Метод forEach()
+// let upperCase = '';
+// letters.forEach(letter => { //Обратите внимание на синтаксис стрелочной функции.
+//   upperCase += letter.toUpperCase()
+// });
+// console.log(upperCase); //HELLO WORLD
+
+//____________________________________
+// let vowels = '';
+// for (let i = 0; i < letters.length; i++) { //Для каждого индекса в массиве
+//   let letter = letters[i]; //Получить элемент по этому индексу
+//   if (/[aeiou]/.test(letter)) { //использвать проверку с регуляерным выражением.
+//     vowels += letter; //Если гласная буква то запомнить ее.
+//   }
+// }
+// console.log(vowels); //eoo
+
+//________________________________
+//Сохранить длину массива в локальной переменной.
+// for (let i = 0; len = letters.length; i < len; i++) {
+//   //Тело цикла остается прежним
+// }
+// //Итерация в обратном порядке направление с конца до начала массива
+// for(let i = letters.length -1; i >= 0; i--) {
+//   //тело цикла остается прежним
+// }
+
+// for (let i = 0; i < a.length; i++) {
+//   if (a[i] === undefined) continue; //Пропускать не определенные и несуществующие элементы.
+//   //тело цикла
+// }
+
+//task 11
+//Многомерные массивы.
+//Создаю многомерный массив.
+// let table = new Array(10) //10 строк таблицы
+// for (let i = 0; i < table.length; i++) {
+//   table[i] = new Array(10); //каждая строка имеет по 10 столбцов.
+// }
+// //Иницилизировать массив.
+// for (let row = 0; row < table.length; row++) {
+//   for (let col = 0; col < table[row].length; col++) {
+//     table[row] [col] = row * col
+//   }
+// }
+// //Использовать многомерный массив для вычисления 5 * 7
+// console.log(table[5] [7]); //35
+//__________________________________________________
+//Одномерные массивы
+// const arr = [5, true, 'stroka', 5.6, 0, -100]; //пустой массив без элементов
+// arr[3] = 'word'
+// console.log(arr.length);
+//
+// //многомерные массивы
+// const matrix = [
+//   [4, 5, 6],
+//   ['stroka', 5.6],
+//   [0, -100]
+// ];
+// matrix[1] [0] = 90;
+// matrix[2] [1] = 'Avtan'
+// console.log(matrix)
+
+//task 12
+//forEach()
+let data = [1, 2, 3, 4, 5], sum = 0;
+//Вычислить сумму элементов массива.
+data.forEach(function (v, i, a ){
+  a[i] = v + 1
+})
+console.log(a[i] = v + 1)
 
 
 
