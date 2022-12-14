@@ -286,13 +286,22 @@
 // console.log(matrix)
 
 //task 12
-//forEach()
-let data = [1, 2, 3, 4, 5], sum = 0;
+//forEach() метод
+// let data = [1, 2, 3, 4, 5], sum = 0;
 //Вычислить сумму элементов массива.
-data.forEach(function (v, i, a ){
-  a[i] = v + 1
-})
-console.log(a[i] = v + 1)
+// data.forEach(function (v, i, a ){
+//   a[i] = v + 1
+// })
+// console.log(a[i] = v + 1)
+
+//map() метод
+// let a = [1, 2, 3];
+// console.log(a.map(x => x * x)); //[ 1, 4, 9 ]: принимает на входе x и возвращает x*x
+
+//Метод filter()
+
+
+
 
 
 
