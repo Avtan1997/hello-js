@@ -1,49 +1,83 @@
-// const name = 'Chynara'
-// const city = 'Bishkek'
-// const greeting = `My name is ${name} and i live in the city ${city}`
+//task 1
+/**
+ * @param {number} num
+ * @return {string}
+ */
+// const intToRoman = function(num) {
+//   const map = {
+//     M: 1000,
+//     CM: 900,
+//     D: 500,
+//     CD: 400,
+//     C: 100,
+//     XC: 90,
+//     L: 50,
+//     XL: 40,
+//     X: 10,
+//     IX: 9,
+//     V: 5,
+//     IV: 4,
+//     I: 1
+//   };
+//   let result = '';
+//   for (key in map) {
+//     const repeatCounter = Math.floor(num / map[key]);
 //
-// console.log(greeting)
+//     if(repeatCounter !== 0) {
+//       result += key.repeat(repeatCounter);
+//     }
+//     num %= map[key];
+//     if(num === 0) return result;
+//   }
+//   return result;
+// };
+// console.log(intToRoman(1999));
 
-//=======================
-// function multByFactor(value, multiplier = 1) {
-//   return value * multiplier
+//task 2 Найти среднее арифметическое в массиве.
+// function getAverage(marks){
+//   return Math.floor(marks.reduce((acc, cur) => acc + cur) / marks.length) //использую встренную функцию reduce
 // }
+// console.log(getAverage([2, 2, 2, 2,]), 2)
+// console.log(getAverage([1, 2, 3, 4, 5]), 3)
+// console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]), 1)
+
+// Без испоьзование встроенной функции.
+// function getAverage(marks){
+//   let acc = 0 //аккумолятор начальное значение 0.
+//   marks.forEach(el => acc + el) //Внутри цикла acc скадываю с текущим элементом el.
+//   return Math.floor(acc / marks.length) //сумму разделяю на количество элементов
+// }
+// console.log(getAverage([2, 2, 2, 2,]), 2)
+// console.log(getAverage([1, 2, 3, 4, 5]), 3)
+// console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]), 1)
+
+//task 3 развернуть последовательность
+// const reverseSeq = n => {
+//   const arr = []; //пустой массив должен заполнить с помоьщю циклов.
+//   for(let i = n; i > 0; i--){ //начальная значения i будет n. Этот цикл будет работать от n до 1
+//     arr.push(i) //в качетве аргумента передаю иттератор.
+//   }
 //
-// console.log(multByFactor(10, 2));
-// console.log(multByFactor(10));
-
-// const multByFactor = (value, multiplier = 1) => value * multiplier
-// console.log(multByFactor(12,3))
-
-
-// if (n === 1)
-//   console.log("Вы получили 1 новое сообщение.”);
-// else
-//   console.log(`Вы получили ${n} новых сообщений.`);
-
-// let len = book.subtitle.length; // ITypeError: undefined не имеет
-
-// let s = { x: 1, у: 1 }.toString(); // s == "[object Object]"
-// console.log(s)
-
-
-// let o = {х : 1, у: 2, z : 3, toString: () => `Hello`};// Три перечислимых собственных свойства
-// o.propertyIsEnumerable("toString")
-// // console.log(Object.keys(o))
-// // console.log(o)
-//   o.propertyIsEnumerable("toString")// => false: не перечислимое
-// for (let p in o) { // Проход в цикле по свойствам
-// // console.log(p);
+//   return arr; //Возвращаю наполненый массив.
 // }
-// console.log(o.toString());
+//  console.log(reverseSeq(5))
 
-// const avtan = {
-//   _age: 25,
-//   get age() {return this._age},
-//   set age(value) {this._age = value}
+//task 4 Возвращаю баллы студентов в зависимости от некоторых условий.
+// function finalGrade(exam, projects) {
+//   if(exam > 90 || projects > 10){ //Сразу дал условие.
+//     return 100;
+//   } else if (exam > 75 && projects >= 5){
+//     return 90; //90 получу если экзамен больше 75 баллов
+//   } else if (exam > 50 && projects >= 2){
+//     return 75;
+//   }else {
+//     return 0;
+//   }
 // }
-// avtan.age = 65
-// console.log(avtan.age)
+// console.log(finalGrade(100, 12), 100);
+// console.log(finalGrade(85, 9), 90);
+
+
 
 
 
