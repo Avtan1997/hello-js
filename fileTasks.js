@@ -1,10 +1,10 @@
 //task 1
-/**
- * @param {number} num
- * @return {string}
- */
+// /**
+//  * @param {number} num
+//  * @return {string}
+//  */
 // const intToRoman = function(num) {
-//   const map = {
+//   const map = {  //map словарь
 //     M: 1000,
 //     CM: 900,
 //     D: 500,
@@ -21,6 +21,7 @@
 //   };
 //   let result = '';
 //   for (key in map) {
+//    console.log(key)
 //     const repeatCounter = Math.floor(num / map[key]);
 //
 //     if(repeatCounter !== 0) {
@@ -31,11 +32,16 @@
 //   }
 //   return result;
 // };
-// console.log(intToRoman(1999));
+// console.log(intToRoman(25));
 
 //task 2 Найти среднее арифметическое в массиве.
 // function getAverage(marks){
-//   return Math.floor(marks.reduce((acc, cur) => acc + cur) / marks.length) //использую встренную функцию reduce
+//  // const sum = marks.reduce((a, b) => a + b, 0)
+//   let sum = 0;
+//   for (const mark of marks){
+//     sum += mark
+//   }
+//   return Math.floor(sum / marks.length) //использую встренную функцию reduce
 // }
 // console.log(getAverage([2, 2, 2, 2,]), 2)
 // console.log(getAverage([1, 2, 3, 4, 5]), 3)
@@ -60,7 +66,7 @@
 //
 //   return arr; //Возвращаю наполненый массив.
 // }
-//  console.log(reverseSeq(5))
+//  console.log(reverseSeq(10))
 
 //task 4 Возвращаю баллы студентов в зависимости от некоторых условий.
 // function finalGrade(exam, projects) {
@@ -74,10 +80,90 @@
 //     return 0;
 //   }
 // }
-// console.log(finalGrade(100, 12), 100);
+// console.log(finalGrade(89, 0), 100);
 // console.log(finalGrade(85, 9), 90);
 
+//task 5
+//Ассинхронность
+// console.log('Request data...')
 
+// setTimeout(() => {
+//   console.log('Preparing data...')
+//
+//   const backendData = {
+//     server: 'aws',
+//     port: 2000,
+//     status: 'working'
+//   }
+//
+//   setTimeout(() => {
+//     backendData.modified = true
+//     console.log('Data received', backendData)
+//   }, 2000)
+// },2000)
 
+// const p = new Promise(function (resolve, reject){
+//   setTimeout(() => {
+//       console.log('Preparing data...')
+//     const backendData = {
+//     server: 'aws',
+//     port: 2000,
+//     status: 'working'
+//   }
+//   resolve(backendData)
+//   }, 2000)
+//
+// })
+//
+// p.then(data => {
+// return new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     data.modified = true
+//     resolve(data)
+//   },2000)
+//
+// })
+//
+// }).then(data => {
+//   console.log('Modified', data)
+// })
+//   .catch(err => console.error('Error:', err))
+//   .finally(() => console.log('Finally'))
 
+// const slip = ms => {
+//   return new Promise(resolve => {
+//     setTimeout(() => resolve(), ms)
+//   })
+// }
+//
+// // slip(2000).then(() => console.log('After 2 seconds'))
+// // slip(5000).then(() => console.log('After 3 seconds'))
+//
+// Promise.all([slip(2000), slip(3000)]).then(() => {
+//   console.log('All promises')
+// })
+//
+// Promise.all([slip(2000), slip(3000)]).then(() => {
+//   console.log('Race promises')
+// })
 
+//task 6
+//Объекты
+const person = Object.create({}, {
+  name: {
+    value: 'Avtandil',
+    enumerable: true,
+    writable: true
+  },
+  birthYear: {
+    value: 1997,
+    enumerable: true
+  }
+
+})
+
+person.name = 'Maxim'
+
+for (let key in person) {
+  console.log('Key', key, person[key])
+}
