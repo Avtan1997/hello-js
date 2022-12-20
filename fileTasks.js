@@ -149,21 +149,22 @@
 
 //task 6
 //Объекты
-const person = Object.create({}, {
-  name: {
-    value: 'Avtandil',
-    enumerable: true,
-    writable: true
-  },
-  birthYear: {
-    value: 1997,
-    enumerable: true
-  }
-
-})
-
-person.name = 'Maxim'
-
-for (let key in person) {
-  console.log('Key', key, person[key])
-}
+// const person = Object.create({}, {
+//   name: {
+//     value: 'Avtandil',
+//     enumerable: true,
+//     writable: true
+//   },
+//   birthYear: {
+//     value: 1997,
+//     enumerable: true
+//   }
+//
+// })
+//
+// person.name = 'Maxim'
+//
+// for (let key in person) {
+//   console.log('Key', key, person[key])
+// }
+//__________________________________________

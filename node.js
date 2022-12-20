@@ -48,16 +48,16 @@
 
 //task 3 Сетевые операции
 //Программа <Hello World> с использованием модуля http для Node. Построил сервер.
-const http = require('http');
-const port = 8080;
-
-const server = http.createServer((req, res) => {
-  res.end('Hello, world.');
-});
-
-server.listen(port, () => {
-  console.log(`Server listening on: http://localhost:${port}`)
-});
+// const http = require('http');
+// const port = 8080;
+//
+// const server = http.createServer((req, res) => {
+//   res.end('Hello, world.');
+// });
+//
+// server.listen(port, () => {
+//   console.log(`Server listening on: http://localhost:${port}`)
+// });
 
 //task 4 Отладчик
 //Чтобы запустить программу в отладчике укажите аргумент debug в командной строке.
