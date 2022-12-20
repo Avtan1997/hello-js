@@ -15,7 +15,7 @@ const concerts = {
 
 function concertsToArray(concerts) {
   return Object.keys(concerts)
-    .filter(city => concerts[city] > new Date()) // O(n)
+    .filter(city => concerts[city] > new Date())
     .sort((a, b) =>  concerts[a] - concerts[b])
 
 }
