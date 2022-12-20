@@ -13,10 +13,10 @@ const concerts = {
   'Каракол': new Date('2023-07-10'),
 }
 
-function concertsToArray(concerts) { // O(n*log2n)
+function concertsToArray(concerts) {
   return Object.keys(concerts)
     .filter(city => concerts[city] > new Date()) // O(n)
-    .sort((a, b) =>  concerts[a] - concerts[b]) // O(N*log2n)
+    .sort((a, b) =>  concerts[a] - concerts[b])
 
 }
 
