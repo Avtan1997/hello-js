@@ -5,7 +5,7 @@
 /// Результат ["Токтогул", "Каракол", "Ош"]
 
 const concerts = {
-  'Талас': new Date('2020-04-01'),
+  'Талас': new Date('2022-04-01'),
   'Токтогул': new Date('2023-07-02'),
   'Жалал-абад': new Date('2022-04-21'),
   'Ош': new Date('2023-07-15'),
@@ -14,9 +14,20 @@ const concerts = {
 }
 
 function concertsToArray(concerts) {
-  return Object.keys(concerts)
-    .filter(city => concerts[city] > new Date())
-    .sort((a, b) =>  concerts[a] - concerts[b])
+  const result = []
+  for(const key of Object.keys(concerts)) {
+    if (concerts[key] > new Date()) {
+      result.push(key)
+      console.log(concerts[key].getTime())
+  }}
+  return result.sort()
+  console.log()
+
+
+
+  // return Object.keys(concerts)
+  //   .filter(city => concerts[city] > new Date())
+  //   .sort((a, b) =>  concerts[a] - concerts[b])
 
 }
 

@@ -1,3 +1,5 @@
+//fun
+'use strict'
 function one(callback){
   return callback ? callback(1) : 1
 }
