@@ -1,14 +1,9 @@
 const http = require('http');
-const PORT = 3000;
 
 const server = http.createServer((req, res) => {
-  console.log('Server request');
-  console.log(req.url, req.method)
+  res.writeHead(200, {'Content-Type' : 'text/plain'});
+  res.end('Hello Avtan!');
 
-  res.write('Hello Avtan!')
-  res.end()
 });
 
-server.listen(3000,'localhost', (error) => {
-  error ? console.log(error) : console.log(`listening port ${PORT}`);
-});
+server.listen(3000, () => console.log('Server работает'))
