@@ -9,6 +9,7 @@ console.log(user)
 
 const copyUser = {...user}
 
+
 copyUser === user
 
 console.log(copyUser.address)

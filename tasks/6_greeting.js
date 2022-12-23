@@ -1,4 +1,4 @@
-function seHi(name){
+function seHi(name) {
   const greeting = 'Hello'
 
   return `${greeting} ${name}!`
