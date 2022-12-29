@@ -65,18 +65,18 @@
 //   author: 'Avtan'
 // }
 //
-// console.table(newPost(firstPost))
+console.table(newPost(firstPost))
 
 
-// const fnWithError = () => {
-//   throw new Error('Some error')
-// }
-//
-// try {
-//   fnWithError()
-// } catch (error){
-//   console.error(error)
-//   console.log(error.message)
-// }
-//
-// console.log('Continue...')
+const fnWithError = () => {
+  throw new Error('Some error')
+}
+
+try {
+  fnWithError()
+} catch (error){
+  console.error(error)
+  console.log(error.message)
+}
+
+console.log('Continue...')
