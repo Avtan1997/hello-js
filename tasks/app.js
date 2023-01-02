@@ -65,18 +65,38 @@
 //   author: 'Avtan'
 // }
 //
-console.table(newPost(firstPost))
+// console.table(newPost(firstPost))
 
+//
+// const fnWithError = () => {
+//   throw new Error('Some error')
+// }
+//
+// try {
+//   fnWithError()
+// } catch (error){
+//   console.error(error)
+//   console.log(error.message)
+// }
+//
+// console.log('Continue...')
 
-const fnWithError = () => {
-  throw new Error('Some error')
-}
+// const myArray = [1, true, 'Avtan']
+// console.log(myArray)
 
-try {
-  fnWithError()
-} catch (error){
-  console.error(error)
-  console.log(error.message)
-}
+// const myArray = [1, 2, 3, 10]
+// console.log(myArray)
+//
+// const res = myArray.forEach(el => console.log(el * 2))
+// console.log(res)
+// console.log(myArray)
 
-console.log('Continue...')
+const myArray = [1, 2, 3]
+console.log(myArray)
+
+const newArray = myArray.map(function (el) {
+  return  el * 3
+})
+
+console.log(newArray)
+console.log(myArray)
