@@ -185,3 +185,68 @@
 // }
 // console.log(sumPositiveNumbers(5, 5))
 
+// const month = 2
+//
+// switch (month) {
+//   case 12:
+//     console.log('Декабрь')
+//     break
+//   case 1:
+//     console.log('Январь')
+//     break
+//   case 2:
+//     console.log('Февраль')
+//     break
+//   default:
+//     console.log('Это не зимний месяц')
+// }
+
+// const myArray = ['first', 'second', 'third']
+//
+// myArray.forEach((element, index) => {
+//   console.log(element, index)
+// })
+//
+// let i = 0
+//
+// while (i > 5) {
+//   console.log(i)
+//   i++
+// }
+
+// let i = 10
+//
+// do {
+//   console.log(i)
+//   i++
+// } while (i < 5)
+
+// const myObject = {
+//   x: 10,
+//   y: true,
+//   z: 'abc'
+// }
+//
+// for (const key in myObject) {
+//   console.log(key, myObject[key])
+// }
+
+// const myObject = {
+//   x: 10,
+//   y: true,
+//   z: 'abc'
+// }
+//
+// Object.keys(myObject).forEach(key => {
+//   console.log(key, myObject[key])
+// })
+
+// const myObject = {
+//   x: 10,
+//   y: true,
+//   z: 'abc'
+// }
+//
+// Object.values(myObject).forEach(value => {
+//   console.log(value)
+// })
