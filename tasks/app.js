@@ -91,12 +91,97 @@
 // console.log(res)
 // console.log(myArray)
 
-const myArray = [1, 2, 3]
-console.log(myArray)
+// const myArray = [1, 2, 3]
+// console.log(myArray)
+//
+// const newArray = myArray.map(function (el) {
+//   return  el * 3
+// })
+//
+// console.log(newArray)
+// console.log(myArray)
 
-const newArray = myArray.map(function (el) {
-  return  el * 3
-})
+// const fruits = ['Apple', 'Banana']
+// const [fruitOne, fruitTwo] = fruits
+//
+// console.log(fruitOne)
+// console.log(fruitTwo)
 
-console.log(newArray)
-console.log(myArray)
+// const userProfile = {
+//   name: 'Avtandil',
+//   commentsQty: 23,
+//   hasSignedAgreement: false,
+// }
+//
+// const {name, commentsQty} = userProfile
+// const {hasSignedAgreement} = userProfile
+//
+// console.log(name)
+// console.log(commentsQty)
+// console.log(hasSignedAgreement)
+
+// const userProfile = {
+//   name: 'Avtandil',
+//   commentsQty: 23,
+//   hasSignedAgreement: false,
+// }
+//
+// const userInfo = ({name, commentsQty}) => {
+//   if (!commentsQty){
+//     return `User ${name} has not no comments`
+//   }
+//   return `User ${name} has ${commentsQty} comments`
+// }
+//
+// userInfo(userProfile)
+// console.log(userInfo)
+
+// let val = 10
+//
+// if(val > 11) {
+//   val += 20
+// }
+// console.log(val)
+
+// const person = {
+//   age: 20
+// }
+//
+// if(!person.name) {
+//   console.log('Имя не указано')
+// } else {
+//   console.log('hjhj')
+// }
+
+// let val = 10
+//
+// if (val < 5) {
+//   val += 20
+// }else {
+//   val -= 20
+// }
+//
+// console.log(val)
+
+// const age = 19
+//
+// if(age > 18) {
+//   console.log('Is adult')
+// } else if (age >= 12) {
+//   console.log('Is teenager')
+// } else {
+//   console.log('Is child')
+// }
+
+// const sumPositiveNumbers = (a, b) => {
+//   if(typeof a !== 'number' || typeof b !== 'number') {
+//     return 'One of the arguments is not a number'
+//   }
+//   if(a <= 0 || b <= 0) {
+//     return 'Numbers are not positive'
+//   }
+//
+//   return a * b
+// }
+// console.log(sumPositiveNumbers(5, 5))
+
