@@ -29,3 +29,5 @@ console.log([...'hello'])
   const name = 'Avtan'
 }
 console.log(palidrom2())
+
+
