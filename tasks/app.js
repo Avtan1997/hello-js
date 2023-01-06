@@ -263,12 +263,12 @@
 //   console.log(letter)
 // }
 
-let name = [1, 2, 3, 4, 5]
-let sum = 0
-for (let i = 0; i < name.length; i++) {
- sum =  sum + name[i]
-}
-console.log(name)
+// let name = [1, 2, 3, 4, 5]
+// let sum = 0
+// for (let i = 0; i < name.length; i++) {
+//  sum =  sum + name[i]
+// }
+// console.log(name)
 
 
 
