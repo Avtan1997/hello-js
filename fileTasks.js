@@ -34,7 +34,7 @@
 // };
 // console.log(intToRoman(25));
 
-//task 2 Найти среднее арифметическое в массиве.
+// task 2 Найти среднее арифметическое в массиве.
 // function getAverage(marks){
 //  // const sum = marks.reduce((a, b) => a + b, 0)
 //   let sum = 0;
@@ -46,7 +46,7 @@
 // console.log(getAverage([2, 2, 2, 2,]), 2)
 // console.log(getAverage([1, 2, 3, 4, 5]), 3)
 // console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]), 1)
-
+//
 // Без испоьзование встроенной функции.
 // function getAverage(marks){
 //   let acc = 0 //аккумолятор начальное значение 0.
