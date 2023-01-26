@@ -287,18 +287,18 @@
 //
 // task 12
 // forEach() метод
-// let data = [1, 2, 3, 4, 5], sum = 0;
+let data = [1, 2, 3, 4, 5], sum = 0;
 // Вычислить сумму элементов массива.
 // data.forEach(function (v, i, a ){
 //   a[i] = v + 1
 // })
 // console.log(a[i] = v + 1)
 //
-// map() метод
+// // map() метод
 // let a = [1, 2, 3];
 // console.log(a.map(x => x * x)); //[ 1, 4, 9 ]: принимает на входе x и возвращает x*x
 //
-// Метод filter()
+// // Метод filter()
 //
 // function multiply(num1,num2) {
 //   const result = num1 + num2;
@@ -306,7 +306,7 @@
 // }
 //
 // console.log(multiply(1995, 2));
-//
+
 //
 //
 //
