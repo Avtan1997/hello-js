@@ -167,23 +167,54 @@
 // console.log(result)
 
 
+// let result
+// const firstName = 'Jack'
+// const lastName = 'Brown'
+// const space = ' '
+// const age = 25
+// const greeting = 'Hey there!'
+//
+//
+// result = 'Jack'
+// result = firstName + space + lastName
+//
+// result = greeting + space + 'My name is' + space + firstName + ' ' + lastName + space  +  "I'am" + space + age+ ' ' + 'years old.'
+//
+//
+//
+//
+// console.log(result)
+
+//
+
+const x = '4'
+const y = null
+const z = x + y
+
+console.log(z)
+console.log(typeof z)
+
+const firstNumber = 50
+const secondNumber = 3
 let result
-const firstName = 'Jack'
-const lastName = 'Brown'
-const space = ' '
-const age = 25
-const greeting = 'Hey there!'
 
+//Simple math operation
+result = firstNumber + secondNumber
+result = firstNumber - secondNumber
+result = firstNumber * secondNumber
+result = firstNumber / secondNumber
+result = firstNumber % secondNumber
 
-result = 'Jack'
-result = firstName + space + lastName
-
-result = greeting + space + 'My name is' + space + firstName + ' ' + lastName + space  +  "I'am" + space + age+ ' ' + 'years old.'
-
-
+//Math object
+result = Math.PI;
+result = Math.round(3.5);
+result = Math.ceil(3.3)
+result = Math.floor(3.7)
 
 
 console.log(result)
+
+
 
 
 
