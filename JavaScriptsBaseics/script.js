@@ -187,32 +187,32 @@
 
 //
 
-const x = '4'
-const y = null
-const z = x + y
-
-console.log(z)
-console.log(typeof z)
-
-const firstNumber = 50
-const secondNumber = 3
-let result
-
-//Simple math operation
-result = firstNumber + secondNumber
-result = firstNumber - secondNumber
-result = firstNumber * secondNumber
-result = firstNumber / secondNumber
-result = firstNumber % secondNumber
-
-//Math object
-result = Math.PI;
-result = Math.round(3.5);
-result = Math.ceil(3.3)
-result = Math.floor(3.7)
-
-
-console.log(result)
+// const x = '4'
+// const y = null
+// const z = x + y
+//
+// console.log(z)
+// console.log(typeof z)
+//
+// const firstNumber = 50
+// const secondNumber = 3
+// let result
+//
+// //Simple math operation
+// result = firstNumber + secondNumber
+// result = firstNumber - secondNumber
+// result = firstNumber * secondNumber
+// result = firstNumber / secondNumber
+// result = firstNumber % secondNumber
+//
+// //Math object
+// result = Math.PI;
+// result = Math.round(3.5);
+// result = Math.ceil(3.3)
+// result = Math.floor(3.7)
+//
+//
+// console.log(result)
 
 
 
