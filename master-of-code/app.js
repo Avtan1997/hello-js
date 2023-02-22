@@ -41,39 +41,39 @@
 
 //Concatanation
 
-let result;
-const firstName = 'Jack';
-const lastName = 'Brown';
-const space = ' ';
-const age = 25;
-const greeting = 'Hey there!'
-
-result = firstName + space + lastName
-result = greeting + space + 'My name is' + space + firstName + space + lastName + space + 'i am' + space + age + space +
-  'years old!'
-
-//Escaping
-result = `I'am 25 years old`;
-result = "I like \"Star Wars\" movie"
+// let result;
+// const firstName = 'Jack';
+// const lastName = 'Brown';
+// const space = ' ';
+// const age = 25;
+// const greeting = 'Hey there!'
+//
+// result = firstName + space + lastName
+// result = greeting + space + 'My name is' + space + firstName + space + lastName + space + 'i am' + space + age + space +
+//   'years old!'
+//
+// //Escaping
+// result = `I'am 25 years old`;
+// result = "I like \"Star Wars\" movie"
 
 //Properties and methods
-result = 'Hello! '.length
-result = firstName.length
-
-result = firstName.concat(' ',lastName);
-result = greeting.concat(space, 'My name is ', firstName, space, lastName )
-result = result.toUpperCase()
-result = result.toLowerCase()
-
-result = firstName[0]
-result = 'Hello'.indexOf('a')
-result = 'Hello'.lastIndexOf('lo')
-result = firstName.indexOf('x')
-result = firstName.charAt(1)
-
-const longString = 'Hi, I\'m a long string'
-
-result = longString.charAt(longString.length -1)
-
-
-console.log(result)
+// result = 'Hello! '.length
+// result = firstName.length
+//
+// result = firstName.concat(' ',lastName);
+// result = greeting.concat(space, 'My name is ', firstName, space, lastName )
+// result = result.toUpperCase()
+// result = result.toLowerCase()
+//
+// result = firstName[0]
+// result = 'Hello'.indexOf('a')
+// result = 'Hello'.lastIndexOf('lo')
+// result = firstName.indexOf('x')
+// result = firstName.charAt(1)
+//
+// const longString = 'Hi, I\'m a long string'
+//
+// result = longString.charAt(longString.length -1)
+//
+//
+// console.log(result)
